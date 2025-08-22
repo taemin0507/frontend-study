@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    table{
+      border-collapse: collapse;
+      background-color: white;
+      width: 100%;
+      border-radius: 10px;
+    }
+    .cart-background{
+      background-color: lightsteelblue;
+      padding: 30px;
+    }
+    .inner{
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    tr{
+      border: 1px solid lightsteelblue;
+      height: 50px;
+    }
+    img{
+      width: 50px;
+      height: 50px;
+      padding: 5px;
+    }
+    .totalpay{
+      text-align: right;
+    }
+    .trhead{
+      text-align: center;
+      font-weight: bold;
+    }
+    td{
+      text-align: center;
+    }
+    .item{
+      width: 400px;
+    }
+    .item1{
+      text-align: left;
+    }
+    .btn-group{
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 0;
+    }
+    .btn{
+      color: white;
+      background-color: orange;
+      border: 1px solid orange;
+      border-radius: 6px;
+      padding: 10px;
+    }
+    .btn:hover{
+      background-color: green;
+      border: 1px solid green;
+    }
+    
+  </style>
+</head>
+
+<body>
+  <div class="cart-background">
+    <div class="inner">
+      <h2>장바구니</h2>
+      <table class="cart-list">
+        <tr class="trhead">
+          <td></td>
+          <td class="item">Item</td>
+          <td>Amount</td>
+          <td>Price</td>
+          <td>Total</td>
+        </tr>
+        <tr>
+          <td><img src="../images/item1.png" alt="카메라"></td>
+          <td  class="item1">카메라</td>
+          <td>1</td>
+          <td>100,000</td>
+          <td>100,000</td>
+        </tr>
+        <tr>
+          <td><img src="../images/item2.png" alt="신발"></td>
+          <td  class="item1">신발신발신발</td>
+          <td>2</td>
+          <td>59,000</td>
+          <td>118,000</td>
+        </tr>
+        <tr>
+          <td colspan="5" class="totalpay">주문금액 218,000원</td>
+        </tr>
+      </table>
+      <div class="btn-group">
+        <a href="#">계속 쇼핑하기</a>
+        <button type="button" class="btn">구매하기</button>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

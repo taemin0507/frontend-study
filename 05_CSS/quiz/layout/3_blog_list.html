@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .navber {
+      display: flex;
+      list-style: none;
+    }
+
+    li {
+      border: 1px solid lightgray;
+      background-color: lightgray;
+      margin: 5px;
+      width: 100px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 20px;
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
+
+    .container {
+      width: 800px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+
+    }
+
+    .blog-list-item {
+      display: flex;
+    }
+
+    .content-header {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+    }
+
+    .content-body {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .name {
+      font-size: 16px;
+    }
+
+    .time {
+      font-size: 15px;
+      font-weight: 300px;
+    }
+
+    .title {
+      font-size: 20px;
+    }
+
+    .text {
+      font-size: 13px;
+      font-weight: normal;
+    }
+
+    .profile {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin-right: 10px;
+
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Tip! 레이아웃 만드는 기본 
+   뭘 만들든 레이아웃은 항상 수평(행)으로 자른 후 박스부터 만들고 시작하면 됨
+   그리고 이 박스들을 전부 <div>로 구현 해 놓으면 됨(물론 시맨틱 태그도 최대한 활용)
+   그리고 박스 안에 글 넣고 그럼 넣고 하면 끝!
+
+   이 때 <div>는 블록 요소이기 때문에 위아래로 배치
+   좌우로 나란히 배치하고 싶으면 float(X), inline -block(△), Flexbox(O)
+  -->
+  <!-- 이모지 단축키: 윈도위키 + 마침 -->
+  <!-- navbar -->
+
+  <nav>
+    <ul class="navber">
+      <li><a href="#">영화</a></li>
+      <li><a href="#">맛집</a></li>
+      <li><a href="#">IT</a></li>
+      <li><a href="#">컴퓨터</a></li>
+    </ul>
+  </nav>
+
+  <!-- blog list -->
+  <div class="container">
+    <!-- 게시글 하나 -->
+    <div class="blog-list-item">
+      <div class="blog-content">
+        <div class="content-header">
+          <!-- 프로필 이미지 -->
+          <img src="../images/OIP.png" alt="프로필" class="profile">
+          <!-- 작성자, 시간 -->
+          <div>
+            <h2 class="name">이태민</h2>
+            <p class="time">1시간 전</p>
+          </div>
+        </div>
+        <div class="content-body">
+          <!-- 글 제목, 글내용 -->
+          <h1 class="title">안녕하세요</h1>
+          <h2 class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga excepturi debitis non, ipsa
+            eveniet, mollitia perspiciatis laboriosam, recusandae ab ex quod unde iure cupiditate libero ut sapiente
+            veritatis quae assumenda.</h2>
+        </div>
+      </div>
+      <div class="blog-img"></div>
+      <!-- 샘플 이미지 -->
+      <img src="../images/item2.png" alt="shose">
+    </div>
+  </div>
+
+</body>
+
+</html>
